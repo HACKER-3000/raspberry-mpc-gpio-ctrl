@@ -1,0 +1,10 @@
+[Unit]
+Description=mpc-btns
+
+[Service]
+Type=simple
+ExecStart=/opt/mpc-btns/mpc-btns.py
+ExecStartPost=/bin/echo "MPC-BTNS RUNNIN"
+
+[Install]
+WantedBy=multi-user.target
